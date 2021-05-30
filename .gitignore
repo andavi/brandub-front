@@ -173,5 +173,5 @@ sketch
 # End of https://www.toptal.com/developers/gitignore/api/node,react,macos
 
 # Added by Andrew Davis
-test-imgs
-sandbox
+.ignore
+.vscode
