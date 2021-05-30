@@ -8,15 +8,16 @@ const setupData = {
 const Brandub = {
   name: "brandub",
 
-  setup: (ctx, setpData) => ({
+  setup: (setpData) => ({
     cells: Array(49).fill().map((c, idx) => ({
       coords: [Math.floor(idx/7), idx % 7],
-      piece: setupData.occupied.includes(idx) ? setupData.pieces.pop() : '',
+      piece: setupData.occupied.includes(idx) ? setupData.pieces.pop() : null,
       corner: [0, 6, 42, 48].includes(idx),
       throne: idx === 24,
     }))
   }),
 
+  // moves: ({})
   
 
 }
